@@ -1,0 +1,167 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_main"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Morpion">
+
+    <LinearLayout
+        android:id="@+id/web_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="15"
+        android:orientation="horizontal">
+
+        <WebView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top|center_horizontal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/difficulty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="40"
+        android:gravity="center_vertical|center_horizontal|fill"
+        android:orientation="horizontal"
+        android:weightSum="99">
+
+        <ToggleButton
+            android:id="@+id/button_easy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_weight="33"
+            android:background="@drawable/toggle_button"
+            android:gravity="center"
+            android:text="@string/button_easy"
+            android:textColor="@color/text_main"
+            android:textOff="@string/button_easy"
+            android:textOn="@string/button_easy" />
+
+        <ToggleButton
+            android:id="@+id/button_normal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="33"
+            android:background="@drawable/toggle_button"
+            android:gravity="center"
+            android:text="@string/button_normal"
+            android:textColor="@color/text_main"
+            android:textOff="@string/button_normal"
+            android:textOn="@string/button_normal" />
+
+        <ToggleButton
+            android:id="@+id/button_impossible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_weight="33"
+            android:background="@drawable/toggle_button"
+            android:gravity="center"
+            android:text="@string/button_impossible"
+            android:textColor="@color/text_main"
+            android:textOff="@string/button_impossible"
+            android:textOn="@string/button_impossible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/score_label_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="45"
+        android:gravity="center_vertical|center_horizontal|fill"
+        android:orientation="horizontal"
+        android:weightSum="99">
+
+
+        <TextView
+            android:id="@+id/score_player_label"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_weight="33"
+            android:gravity="center"
+            android:text="@string/score_player_label"
+            android:textColor="@color/text_main" />
+
+        <TextView
+            android:id="@+id/game_counter_label"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_weight="33"
+            android:gravity="center"
+            android:text="@string/game_counter_label"
+            android:textColor="@color/text_main" />
+
+        <TextView
+            android:id="@+id/score_opponent_label"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_weight="33"
+            android:gravity="center"
+            android:text="@string/score_opponent_label"
+            android:textColor="@color/text_main" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/score_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="45"
+        android:gravity="center_vertical|center_horizontal|fill"
+        android:orientation="horizontal"
+        android:weightSum="99">
+
+
+        <TextView
+            android:id="@+id/score_player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_weight="33"
+            android:gravity="center"
+            android:text="@string/score_player_default"
+            android:textColor="@color/text_main" />
+
+        <TextView
+            android:id="@+id/game_counter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="33"
+            android:gravity="center"
+            android:text="@string/game_counter_default"
+            android:textColor="@color/text_main" />
+
+        <TextView
+            android:id="@+id/score_opponent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_weight="33"
+            android:gravity="center"
+            android:text="@string/score_opponent_default"
+            android:textColor="@color/text_main" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

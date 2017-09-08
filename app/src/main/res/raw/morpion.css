@@ -1,0 +1,98 @@
+/* Morpion */
+
+body {
+    padding: 5px;
+    margin: 5px;
+    background: black;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+/* Chaque image fait 100x100 */
+#grid td{
+    width: 100px;
+    height: 100px;
+}
+
+/* Ligne verticale */
+#grid .col-1 {
+    border-left: 1px solid #FDFDFE;
+    border-right: 1px solid #FDFDFE;
+}
+
+/* Ligne horizontale */
+#row-1 td{
+    border-top: 1px solid #FDFDFE;
+    border-bottom: 1px solid #FDFDFE;
+}
+
+
+.crossed-line {
+    display: flex;
+    position: absolute;
+    color: #FDFDFE;
+}
+
+/* Left top to right bottom */
+#crossed-line-diag-lt2rb {
+    width: 400px; /* a * sqrt(2) = 300 * 1.42 = 425 -> correction -> 400 */
+    top: 140px;
+    left: -50px; /* -(width-300) / 2 vers la gauche pour équilibrer le centre de rotation */
+    -webkit-transform:rotate(45deg);
+
+}
+/* Right top to left bottom */
+#crossed-line-diag-rt2lb {
+    width: 400px; /* a * sqrt(2) = 300 * 1.42 = 425 -> correction -> 400 */
+    top: 140px;
+    left: -50px; /* -(width-300) / 2 vers la gauche pour équilibrer le centre de rotation */
+    -webkit-transform:rotate(-45deg);
+}
+
+/* Top line */
+#crossed-line-hori-tl {
+    width: 300px;
+    top: 35px;
+    left: 0px;
+}
+/* Middle line */
+#crossed-line-hori-ml {
+    width: 300px;
+    top: 135px;
+    left: 0px;
+}
+/* Bottom line */
+#crossed-line-hori-bl {
+    width: 300px;
+    top: 235px;
+    left: 0px;
+}
+
+/* Left line */
+#crossed-line-vert-ll {
+    width: 300px;
+    top: 135px;
+    left: -100px;
+    -webkit-transform:rotate(90deg);
+}
+/* Center line */
+#crossed-line-vert-ml {
+    width: 300px;
+    top: 135px;
+    left: 0px;
+    -webkit-transform:rotate(90deg);
+}
+/* Right line */
+#crossed-line-vert-rl {
+    width: 300px;
+    top: 135px;
+    left: 100px;
+    -webkit-transform:rotate(90deg);
+}

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Morpion</string>
+
+    <string name="action_exit">Quitter</string>
+
+    <string name="game_counter_label">Partie(s)</string>
+    <string name="score_opponent_label">Adversaire</string>
+    <string name="score_player_label">Vous</string>
+
+    <string name="toast_cell_already_used">Cette case est déjà prise !</string>
+    <string name="player_win">Vous avez gagné \\o/ !</string>
+    <string name="computer_win">Vous avez perdu :( !</string>
+    <string name="noone_win">Match nul !</string>
+    <string name="button_easy">Facile</string>
+    <string name="button_normal">Normal</string>
+    <string name="button_impossible">Impossible</string>
+    <string name="first_game_message">La partie va commencer…</string>
+    <string name="next_game_message">La partie suivante va commencer…</string>
+    <string name="score_player_default">0</string>
+    <string name="game_counter_default">0</string>
+    <string name="score_opponent_default">0</string>
+    <string name="player_turn_to_play">C\'est à vous de jouer…</string>
+    <string name="computer_about_to_play">L\'ordinateur se prépare à jouer…</string>
+</resources>

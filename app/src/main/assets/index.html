@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Morpion</title>
+
+    <!-- DEBUT Android embarqué -->
+    <link rel="stylesheet" href="file:///android_res/raw/style.css">
+    <link rel="stylesheet" href="file:///android_res/raw/morpion.css">
+    <script src="file:///android_res/raw/jquery_1_11_3_min.js"></script>
+    <script type="text/javascript">window.basePath = "file:///android_res/";</script>
+    <script src="file:///android_res/raw/controler.js"></script>
+    <!-- FIN Android embarqué -->
+
+    <!-- DEBUT Debuggage externe
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./morpion.css">
+    <script src="./jquery_1_11_3_min.js"></script>
+    <script type="text/javascript">
+//Proxy pour débuggage dans navigateur web
+if(typeof Android == "undefined"){
+    window.Android = {
+        showToast : function(text) { alert(text); },
+        addGridElem : function(row, col, el) { return true; },
+        getPlayerElement : function() { return "circle"; },
+        canIPlay: function() { return true; },
+        didIWin: function() { return false; },
+        doComputerTurn: function() {}
+    };
+    window.basePath = "../";
+}
+    </script>
+    <script src="./engin.jscript>
+    <!-- FIN debuggage externe -->
+
+</head>
+
+<body>
+
+<div id="app">
+    <hr class="crossed-line" id="crossed-line-diag-lt2rb"/>
+    <hr class="crossed-line" id="crossed-line-diag-rt2lb"/>
+
+    <hr class="crossed-line" id="crossed-line-vert-tl"/>
+    <hr class="crossed-line" id="crossed-line-vert-ml"/>
+    <hr class="crossed-line" id="crossed-line-vert-bl"/>
+
+    <hr class="crossed-line" id="crossed-line-hori-ll"/>
+    <hr class="crossed-line" id="crossed-line-hori-ml"/>
+    <hr class="crossed-line" id="crossed-line-hori-rl"/>
+
+    <table id="grid">
+        <tr id="row-0">
+            <td class="col-0"></td>
+            <td class="col-1"></td>
+            <td class="col-2"></td>
+        </tr>
+
+        <tr id="row-1">
+            <td class="col-0"></td>
+            <td class="col-1"></td>
+            <td class="col-2"></td>
+        </tr>
+
+        <tr id="row-2">
+            <td class="col-0"></td>
+            <td class="col-1"></td>
+            <td class="col-2"></td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
